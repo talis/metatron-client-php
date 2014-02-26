@@ -22,8 +22,17 @@ class Work {
     {
         if(isset($this->identifiers['isbn']))
         {
-            $isbn = $this->identifiers['isbn'][0];
-            return $this->client->getEditionsFromIsbn($isbn, $filters);
+            foreach($this->identifiers['isbn'] as $isbn)
+            {
+                try
+                {
+                    return $this->client->getEditionsFromIsbn($isbn, $filters);
+                } catch(\Exception $e)
+                {
+                    // Metatron is very intolerant of ISBNs
+                    continue;
+                }
+            }
         }
     }
 

@@ -10,7 +10,10 @@ class ClientTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals('http://example.org', $client->getServiceBaseUrl());
     }
 
-    public function testFoo()
+    /**
+     * Not a unit test -- just confirming that behavior is what I actually want
+     */
+    public function testEditions()
     {
         $location = getenv('METATRON_BASEURL');
         $client = new \metatron\Client($location);
@@ -18,5 +21,18 @@ class ClientTest extends PHPUnit_Framework_TestCase {
         var_dump($r);
     }
 
+    /**
+     * Not a unit test -- just confirming that behavior is what I actually want
+     */
+    public function testWorks()
+    {
+        $location = getenv('METATRON_BASEURL');
+        $client = new \metatron\Client($location);
+        $r = $client->getWorksFromTitleAuthor('Career counseling: a holistic approach', 'Zunker, Vernon G');
+        var_dump($r);
+        var_dump($r->next());
+        $works = $r->getWorks();
+        var_dump($works[0]->getEditions());
+    }
 
 }

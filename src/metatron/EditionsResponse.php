@@ -40,6 +40,7 @@ class EditionsResponse extends Response {
                 }
             }
         }
+        $this->total = count($this->editions);
     }
 
     /**

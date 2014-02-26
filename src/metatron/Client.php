@@ -41,6 +41,8 @@ class Client {
 
     /**
      * @param string $isbn
+     * @param array $filters
+     * @return EditionsResponse
      */
     public function getEditionsFromIsbn($isbn, $filters = array())
     {
@@ -49,10 +51,47 @@ class Client {
         return $this->getEditionsResponseFromKev($kev);
     }
 
+    /**
+     * @param string|null $title
+     * @param string|null $author
+     * @param array $filters
+     * @return WorksResponse
+     * @throws \InvalidArgumentException
+     */
+    public function getWorksFromTitleAuthor($title = null, $author = null, $filters = array())
+    {
+        $filters['service'] = 'works';
+        $rft = array();
+        if($title)
+        {
+            $rft['btitle'] = $title;
+        }
+        if($author)
+        {
+            $rft['au'] = $author;
+        }
+        if(empty($rft))
+        {
+            throw new \InvalidArgumentException('Title or Author must be sent!');
+        }
+        $kev = $this->createOpenURLKev($rft, $filters);
+        $response = $this->getWorksResponseFromKev($kev);
+        $response->setSearchParams(array('title'=>$title, 'author'=>$author, 'filters'=>$filters));
+        return $response;
+    }
+
     protected function getEditionsResponseFromKev($kev)
     {
         $metatronResponse = $this->getHttpClient()->get("/resolve?" . $kev, array(), array('headers'=>array('Accept' => 'application/json', 'Accept-Language'=>'en')))->send();
         $response = new EditionsResponse($this);
+        $response->loadFromJson($metatronResponse->getBody());
+        return $response;
+    }
+
+    protected function getWorksResponseFromKev($kev)
+    {
+        $metatronResponse = $this->getHttpClient()->get("/resolve?" . $kev, array(), array('headers'=>array('Accept' => 'application/json', 'Accept-Language'=>'en')))->send();
+        $response = new WorksResponse($this);
         $response->loadFromJson($metatronResponse->getBody());
         return $response;
     }

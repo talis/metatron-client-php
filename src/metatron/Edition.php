@@ -12,4 +12,19 @@ class Edition {
         }
     }
 
+    public function getContributorNames()
+    {
+        $contributors = array();
+        if(isset($this->contributors))
+        {
+            foreach($this->contributors as $c)
+            {
+                if(isset($c['name']))
+                {
+                    $contributors[] = $c['name'];
+                }
+            }
+        }
+        return $contributors;
+    }
 }

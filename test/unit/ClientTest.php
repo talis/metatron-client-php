@@ -28,7 +28,7 @@ class ClientTest extends PHPUnit_Framework_TestCase {
     {
         $location = getenv('METATRON_BASEURL');
         $client = new \metatron\Client($location);
-        $r = $client->getWorksFromTitleAuthor(' Communication as culture: essays on media and society', 'Carey');
+        $r = $client->getWorksFromTitleAuthor('Communication as culture: essays on media and society', 'Carey');
         var_dump($r);
         var_dump($r->next());
         $works = $r->getWorks();

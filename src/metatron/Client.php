@@ -44,10 +44,15 @@ class Client {
      * @param array $filters
      * @return EditionsResponse
      */
-    public function getEditionsFromIsbn($isbn, $filters = array())
+    public function getEditionsFromIsbn($isbn, $serviceOptions = array())
     {
-        $filters['service'] = 'editions';
-        $kev = $this->createOpenURLKev(array('isbn'=>$isbn), $filters);
+        $service = array('service'=>'editions');
+        foreach($serviceOptions as $option=>$value)
+        {
+            $service[$option] = $value;
+        }
+
+        $kev = $this->createOpenURLKev(array('isbn'=>$isbn), $service);
         return $this->getEditionsResponseFromKev($kev);
     }
 
@@ -58,9 +63,13 @@ class Client {
      * @return WorksResponse
      * @throws \InvalidArgumentException
      */
-    public function getWorksFromTitleAuthor($title = null, $author = null, $filters = array())
+    public function getWorksFromTitleAuthor($title = null, $author = null, $serviceOptions = array())
     {
-        $filters['service'] = 'works';
+        $service = array('service'=>'works');
+        foreach($serviceOptions as $option=>$value)
+        {
+            $service[$option] = $value;
+        }
         $rft = array();
         if($title)
         {
@@ -74,9 +83,9 @@ class Client {
         {
             throw new \InvalidArgumentException('Title or Author must be sent!');
         }
-        $kev = $this->createOpenURLKev($rft, $filters);
+        $kev = $this->createOpenURLKev($rft, $service);
         $response = $this->getWorksResponseFromKev($kev);
-        $response->setSearchParams(array('title'=>$title, 'author'=>$author, 'filters'=>$filters));
+        $response->setSearchParams(array('title'=>$title, 'author'=>$author, 'service'=>$service));
         return $response;
     }
 

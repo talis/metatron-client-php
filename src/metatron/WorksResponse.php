@@ -56,9 +56,10 @@ class WorksResponse extends Response {
         {
             return false;
         }
-        $filters = $this->searchParams['filters'];
-        $filters['search.offset'] = $this->offset + $this->limit;
-        return $this->client->getWorksFromTitleAuthor($this->searchParams['title'], $this->searchParams['author'], $filters);
+        $service = $this->searchParams['service'];
+
+        $service['search.offset'] = $this->offset + $this->limit;
+        return $this->client->getWorksFromTitleAuthor($this->searchParams['title'], $this->searchParams['author'], $service);
     }
 
     /**

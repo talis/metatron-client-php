@@ -23,6 +23,5 @@ class EditionsResponseTest extends TestBase {
         {
             $this->assertInstanceOf('\metatron\Edition', $edition);
         }
-
     }
 }

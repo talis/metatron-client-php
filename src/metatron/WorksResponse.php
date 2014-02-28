@@ -1,6 +1,7 @@
 <?php
 
 namespace metatron;
+require_once 'common.php';
 
 class WorksResponse extends Response {
     /**
@@ -56,10 +57,10 @@ class WorksResponse extends Response {
         {
             return false;
         }
-        $service = $this->searchParams['service'];
+        $service = $this->searchParams[SERVICE_KEY];
 
-        $service['search.offset'] = $this->offset + $this->limit;
-        return $this->client->getWorksFromTitleAuthor($this->searchParams['title'], $this->searchParams['author'], $service);
+        $service[SEARCH_PREFIX . '.' . SEARCH_OFFSET] = $this->offset + $this->limit;
+        return $this->client->getWorksFromTitleAuthor($this->searchParams[TITLE_KEY], $this->searchParams[AUTHOR_KEY], $service);
     }
 
     /**

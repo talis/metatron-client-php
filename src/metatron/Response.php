@@ -1,7 +1,7 @@
 <?php
 
 namespace metatron;
-
+require_once 'common.php';
 abstract class Response {
     /**
      * @var array
@@ -24,6 +24,11 @@ abstract class Response {
      * @var \metatron\Client
      */
     protected $client;
+
+    /**
+     * @var array
+     */
+    protected $filters = array();
 
     /**
      * @param string $jsonDoc
@@ -65,6 +70,14 @@ abstract class Response {
     public function getLimit()
     {
         return $this->limit;
+    }
+
+    /**
+     * @return array
+     */
+    public function getFilters()
+    {
+        return $this->filters;
     }
 
 }

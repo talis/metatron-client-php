@@ -1,6 +1,7 @@
 <?php
 
 namespace metatron;
+require_once 'common.php';
 
 class Client {
     protected $httpClient;
@@ -46,7 +47,7 @@ class Client {
      */
     public function getEditionsFromIsbn($isbn, $serviceOptions = array())
     {
-        $service = array('service'=>'editions');
+        $service = array(SERVICE_PR=>SERVICE_EDITIONS);
         foreach($serviceOptions as $option=>$value)
         {
             $service[$option] = $value;
@@ -65,7 +66,7 @@ class Client {
      */
     public function getWorksFromTitleAuthor($title = null, $author = null, $serviceOptions = array())
     {
-        $service = array('service'=>'works');
+        $service = array(SERVICE_KEY=>SERVICE_WORKS);
         foreach($serviceOptions as $option=>$value)
         {
             $service[$option] = $value;
@@ -73,11 +74,11 @@ class Client {
         $rft = array();
         if($title)
         {
-            $rft['btitle'] = $title;
+            $rft[TITLE_KEY] = $title;
         }
         if($author)
         {
-            $rft['au'] = $author;
+            $rft[AUTHOR_KEY] = $author;
         }
         if(empty($rft))
         {
@@ -85,13 +86,13 @@ class Client {
         }
         $kev = $this->createOpenURLKev($rft, $service);
         $response = $this->getWorksResponseFromKev($kev);
-        $response->setSearchParams(array('title'=>$title, 'author'=>$author, 'service'=>$service));
+        $response->setSearchParams(array(TITLE_KEY=>$title, AUTHOR_KEY=>$author, SERVICE_KEY=>$service));
         return $response;
     }
 
     protected function getEditionsResponseFromKev($kev)
     {
-        $metatronResponse = $this->getHttpClient()->get("/resolve?" . $kev, array(), array('headers'=>array('Accept' => 'application/json', 'Accept-Language'=>'en')))->send();
+        $metatronResponse = $this->getHttpClient()->get(RESOLVER_PATH . '?' . $kev, array(), array('headers'=>array('Accept' => 'application/json', 'Accept-Language'=>'en')))->send();
         $response = new EditionsResponse($this);
         $response->loadFromJson($metatronResponse->getBody());
         return $response;
@@ -99,7 +100,7 @@ class Client {
 
     protected function getWorksResponseFromKev($kev)
     {
-        $metatronResponse = $this->getHttpClient()->get("/resolve?" . $kev, array(), array('headers'=>array('Accept' => 'application/json', 'Accept-Language'=>'en')))->send();
+        $metatronResponse = $this->getHttpClient()->get(RESOLVER_PATH . '?' . $kev, array(), array('headers'=>array('Accept' => 'application/json', 'Accept-Language'=>'en')))->send();
         $response = new WorksResponse($this);
         $response->loadFromJson($metatronResponse->getBody());
         return $response;
@@ -122,7 +123,7 @@ class Client {
             }
             foreach($rftVals as $rft)
             {
-                $kevParams[] = 'rft.'. urlencode($rftKey) . '=' . urlencode($rft);
+                $kevParams[] = RFT_PREFIX . '.' . urlencode($rftKey) . '=' . urlencode($rft);
             }
         }
         foreach($serviceParams as $svcKey=>$svcVals)
@@ -134,7 +135,7 @@ class Client {
             }
             foreach($svcVals as $svc)
             {
-                $kevParams[] = 'svc.'. urlencode($svcKey) . '=' . urlencode($svc);
+                $kevParams[] = SVC_PREFIX . '.' . urlencode($svcKey) . '=' . urlencode($svc);
             }
         }
         return implode("&", $kevParams);

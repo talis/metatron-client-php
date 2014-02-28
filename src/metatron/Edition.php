@@ -1,6 +1,7 @@
 <?php
 
 namespace metatron;
+require_once 'common.php';
 
 class Edition {
 

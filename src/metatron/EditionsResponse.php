@@ -1,6 +1,7 @@
 <?php
 
 namespace metatron;
+require_once 'common.php';
 
 class EditionsResponse extends Response {
     /**
@@ -27,6 +28,12 @@ class EditionsResponse extends Response {
             $this->services = $response['service'];
         }
 
+        // Set the filters used in response
+        if(isset($response['filters']))
+        {
+            $this->filters = $response['filters'];
+        }
+
         if(isset($response['editions']))
         {
             foreach($response['editions'] as $editionArray)
@@ -41,6 +48,7 @@ class EditionsResponse extends Response {
             }
         }
         $this->total = count($this->editions);
+        $this->limit = $this->total;
     }
 
     /**

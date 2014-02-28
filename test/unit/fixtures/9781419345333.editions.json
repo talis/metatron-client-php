@@ -1,0 +1,662 @@
+{"requested": {
+    "identifiers": {
+        "isbn": ["9781419345333"]
+    },
+    "other_titles": {
+        "leading_article": "The"
+    },
+    "identifier": "9781419345333",
+    "source": "nielsen",
+    "title": "Stranger",
+    "contributors": [
+        {
+            "role": "A01",
+            "type": "person",
+            "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+            "name_parts": {
+                "surname": "Camus",
+                "first_name": "Albert"
+            },
+            "name": "Albert Camus"
+        },
+        {
+            "role": "E07",
+            "type": "person",
+            "key_string": "18ce9d51c7dd4f5a4e36132b9d7dcd29",
+            "name_parts": {
+                "surname": "Davis",
+                "first_name": "Jonathan"
+            },
+            "name": "Jonathan Davis"
+        }
+    ],
+    "dates": {
+        "published": "2005-12-01T00:00:00.000Z"
+    },
+    "country": "xxu",
+    "format": ["AB"],
+    "publisher": {
+        "name": "Recorded Books",
+        "imprint": "Recorded Books"
+    },
+    "created_at": "2013-09-11T10:46:22.057Z",
+    "updated_at": "2013-09-11T10:46:22.057Z",
+    "publishing_status": "04",
+    "work_id": "stranger/camus",
+    "full_title": "The Stranger"
+}, "service": ["editions"], "editions": [
+    {
+        "identifiers": {
+            "isbn": ["9781299045811"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9781299045811",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "2012-01-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "format": ["DG"],
+        "publisher": {
+            "name": "Vintage Books",
+            "imprint": "Vintage Books"
+        },
+        "created_at": "2013-10-11T11:10:45.524Z",
+        "updated_at": "2013-10-11T11:10:45.524Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780307827661"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9780307827661",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "2011-11-30T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "pages": "144",
+        "format": ["DG"],
+        "publisher": {
+            "name": "Knopf Doubleday Publishing Group",
+            "imprint": "Knopf Doubleday Publishing Group"
+        },
+        "created_at": "2013-09-13T10:31:32.947Z",
+        "updated_at": "2013-09-13T10:31:32.947Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9781406711288"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9781406711288",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "2006-11-12T00:00:00.000Z"
+        },
+        "country": "xxk",
+        "pages": "164",
+        "place_of_publication": "Alcester",
+        "format": ["BC"],
+        "publisher": {
+            "name": "Read Books",
+            "imprint": "Read Books"
+        },
+        "created_at": "2013-09-12T20:33:54.189Z",
+        "updated_at": "2013-09-12T20:33:54.189Z",
+        "publishing_status": "01",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9781419345333"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9781419345333",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            },
+            {
+                "role": "E07",
+                "type": "person",
+                "key_string": "18ce9d51c7dd4f5a4e36132b9d7dcd29",
+                "name_parts": {
+                    "surname": "Davis",
+                    "first_name": "Jonathan"
+                },
+                "name": "Jonathan Davis"
+            }
+        ],
+        "dates": {
+            "published": "2005-12-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "format": ["AB"],
+        "publisher": {
+            "name": "Recorded Books",
+            "imprint": "Recorded Books"
+        },
+        "created_at": "2013-09-11T10:46:22.057Z",
+        "updated_at": "2013-09-11T10:46:22.057Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9781419337314"]
+        },
+        "other_titles": {},
+        "identifier": "9781419337314",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "2005-05-01T00:00:00.000Z"
+        },
+        "edition_statement": {
+            "long": "abridged edition",
+            "short": "abridged ed"
+        },
+        "country": "xxu",
+        "format": ["AC"],
+        "publisher": {
+            "name": "Recorded Books",
+            "imprint": "Recorded Books"
+        },
+        "created_at": "2013-09-12T16:18:15.065Z",
+        "updated_at": "2013-09-12T16:18:15.065Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9781587240324"]
+        },
+        "other_titles": {
+            "leading_article": "The",
+            "series": "Wheeler Softcover"
+        },
+        "identifier": "9781587240324",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            },
+            {
+                "role": "B06",
+                "type": "person",
+                "key_string": "1388973cd44151dd996399dbd3aad570",
+                "name_parts": {
+                    "surname": "Ward",
+                    "first_name": "Matthew"
+                },
+                "name": "Matthew Ward"
+            }
+        ],
+        "dates": {
+            "published": "2001-05-27T00:00:00.000Z"
+        },
+        "edition_statement": {
+            "long": "large type edition",
+            "short": "large print ed"
+        },
+        "country": "xxu",
+        "format": ["BC"],
+        "publisher": {
+            "name": "Wheeler Publishing",
+            "imprint": "Wheeler Publishing"
+        },
+        "created_at": "2013-09-11T14:27:02.841Z",
+        "updated_at": "2013-09-11T14:27:02.841Z",
+        "publishing_status": "07",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780394533056"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9780394533056",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "1999-01-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "pages": "123",
+        "place_of_publication": "New York",
+        "format": ["BB"],
+        "publisher": {
+            "name": "Alfred A. Knopf",
+            "imprint": "Alfred A. Knopf"
+        },
+        "created_at": "2013-09-14T07:36:11.672Z",
+        "updated_at": "2013-09-14T07:36:11.672Z",
+        "publishing_status": "07",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780679420262"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9780679420262",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            },
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "1388973cd44151dd996399dbd3aad570",
+                "name_parts": {
+                    "surname": "Ward",
+                    "first_name": "Matthew"
+                },
+                "name": "Matthew Ward"
+            }
+        ],
+        "dates": {
+            "published": "1997-02-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "pages": "152",
+        "place_of_publication": "New York",
+        "format": ["BB"],
+        "publisher": {
+            "name": "Random House USA Inc",
+            "imprint": "Random House USA Inc"
+        },
+        "created_at": "2013-09-11T11:33:55.787Z",
+        "updated_at": "2013-09-11T11:33:55.787Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9784102114018"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9784102114018",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "1996-05-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "pages": "146",
+        "language": "jpn",
+        "format": ["BC"],
+        "publisher": {
+            "name": "Shinchosha/Tsai Fong Books",
+            "imprint": "Shinchosha/Tsai Fong Books"
+        },
+        "created_at": "2014-02-23T00:44:43.240Z",
+        "updated_at": "2014-02-23T00:44:43.240Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780606014267"]
+        },
+        "other_titles": {
+            "series": "Vintage International (Pb)"
+        },
+        "identifier": "9780606014267",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "1989-03-13T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "pages": "123",
+        "format": ["BB"],
+        "publisher": {
+            "name": "Turtleback Books",
+            "imprint": "Turtleback Books"
+        },
+        "created_at": "2013-09-12T09:21:44.240Z",
+        "updated_at": "2013-09-12T09:21:44.240Z",
+        "publishing_status": "07",
+        "work_id": "stranger/camus",
+        "full_title": "Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780075478126"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9780075478126",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "1989-03-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "format": ["BC"],
+        "publisher": {
+            "name": "McGraw-Hill Companies",
+            "imprint": "McGraw-Hill Companies"
+        },
+        "created_at": "2013-09-12T20:01:03.446Z",
+        "updated_at": "2013-09-12T20:01:03.446Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780679720201"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9780679720201",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "1989-03-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "pages": "123",
+        "place_of_publication": "New York",
+        "format": ["BC"],
+        "publisher": {
+            "name": "Random House USA Inc",
+            "imprint": "Vintage Books"
+        },
+        "created_at": "2013-09-14T05:05:11.565Z",
+        "updated_at": "2013-09-14T05:05:11.565Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780812416695"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9780812416695",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            },
+            {
+                "role": "B06",
+                "type": "person",
+                "key_string": "1388973cd44151dd996399dbd3aad570",
+                "name_parts": {
+                    "surname": "Ward",
+                    "first_name": "Matthew"
+                },
+                "name": "Matthew Ward"
+            }
+        ],
+        "dates": {
+            "published": "1989-03-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "languages": "English & French",
+        "language": "mul",
+        "format": ["BB"],
+        "publisher": {
+            "name": "Perfection Learning",
+            "imprint": "Perfection Learning"
+        },
+        "created_at": "2013-09-14T09:14:22.281Z",
+        "updated_at": "2013-09-14T09:14:22.281Z",
+        "publishing_status": "04",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780075432272"]
+        },
+        "other_titles": {
+            "leading_article": "The"
+        },
+        "identifier": "9780075432272",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "1988-03-01T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "format": ["BB"],
+        "publisher": {
+            "name": "McGraw-Hill Companies",
+            "imprint": "McGraw-Hill Companies"
+        },
+        "created_at": "2013-09-12T20:01:12.012Z",
+        "updated_at": "2013-09-12T20:01:12.012Z",
+        "publishing_status": "07",
+        "work_id": "stranger/camus",
+        "full_title": "The Stranger"
+    },
+    {
+        "identifiers": {
+            "isbn": ["9780394447483"]
+        },
+        "other_titles": {},
+        "identifier": "9780394447483",
+        "source": "nielsen",
+        "title": "Stranger",
+        "contributors": [
+            {
+                "role": "A01",
+                "type": "person",
+                "key_string": "df6f525fb50c7c903b4a88a89dfc176b",
+                "name_parts": {
+                    "surname": "Camus",
+                    "first_name": "Albert"
+                },
+                "name": "Albert Camus"
+            }
+        ],
+        "dates": {
+            "published": "1946-06-15T00:00:00.000Z"
+        },
+        "country": "xxu",
+        "format": ["BB"],
+        "publisher": {
+            "name": "Alfred A. Knopf",
+            "imprint": "Alfred A. Knopf"
+        },
+        "created_at": "2013-09-12T09:21:12.619Z",
+        "updated_at": "2013-09-12T09:21:12.619Z",
+        "publishing_status": "07",
+        "work_id": "stranger/camus",
+        "full_title": "Stranger"
+    }
+]}

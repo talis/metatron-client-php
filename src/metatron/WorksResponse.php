@@ -53,6 +53,10 @@ class WorksResponse extends Response {
 
     public function next()
     {
+        if(empty($this->searchParams))
+        {
+            return false;
+        }
         if(($this->offset + $this->limit) >= $this->total)
         {
             return false;
@@ -85,5 +89,13 @@ class WorksResponse extends Response {
     public function getWorks()
     {
         return $this->works;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getQuery()
+    {
+        return $this->query;
     }
 }

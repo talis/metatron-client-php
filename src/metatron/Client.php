@@ -47,7 +47,7 @@ class Client {
      */
     public function getEditionsFromIsbn($isbn, $serviceOptions = array())
     {
-        $service = array(SERVICE_PR=>SERVICE_EDITIONS);
+        $service = array(SERVICE_KEY=>SERVICE_EDITIONS);
         foreach($serviceOptions as $option=>$value)
         {
             $service[$option] = $value;
